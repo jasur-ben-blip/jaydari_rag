@@ -15,6 +15,7 @@ class Settings(BaseSettings):
     qdrant_url: str | None = None 
     qdrant_api_key: str | None = None
     qdrant_collection: str = 'documents'
+    qdrant_timeout: float = 10.0
 
     embedding_model: str = 'sentence-transformers/all-MiniLM-L6-v2'
 
