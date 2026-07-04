@@ -20,11 +20,11 @@ class Settings(BaseSettings):
     embedding_model: str
 
     llm_model: str
-    llm_adapter_path: str | None = None
+    llm_adapter_path: str 
     llm_device: str = 'cpu'
-    llm_max_new_tokens: int = 256
+    llm_max_new_tokens: int
     llm_temperature: float = 0.2
-    
+
     rag_enabled: bool = True
     rag_mode: str = 'auto'
     top_k: int = 5
